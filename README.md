@@ -1,3 +1,6 @@
+# TaskFlow API
+![CI Pipeline](https://github.com/Rouxy42/Tests-Unitaires-Backend-Frontend/actions/workflows/ci-pipeline.yml/badge.svg)
+
 # 🚀 EDL Starter - Code de Démarrage
 
 Bienvenue dans le code de démarrage pour les ateliers d'Environnement de Développement Logiciel (EDL) !
