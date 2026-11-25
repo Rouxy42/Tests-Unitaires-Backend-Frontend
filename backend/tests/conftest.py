@@ -7,6 +7,12 @@ from src.app import app, clear_tasks
 # N'affiche pas chaque requête HTTP du client de test sous les tests en échec
 logging.getLogger("httpx2").setLevel(logging.WARNING)
 
+def pytest_configure(config):
+    """Enregistre les markers personnalisés""" 
+    config.addinivalue_line(
+        "markers",
+        "e2e: mark test as end-to-end test (slow)"
+)
 
 @pytest.fixture(autouse=True)
 def clean_tasks():
